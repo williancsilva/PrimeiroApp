@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DFFA85C23DF7E790015C614 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFA85A23DF7E790015C614 /* NewsTableViewCell.swift */; };
+		9DFFA85D23DF7E790015C614 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DFFA85B23DF7E790015C614 /* NewsTableViewCell.xib */; };
 		AC17446023CF3640002CC0AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17445F23CF3640002CC0AD /* AppDelegate.swift */; };
 		AC17446223CF3640002CC0AD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17446123CF3640002CC0AD /* FirstViewController.swift */; };
 		AC17446423CF3640002CC0AD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17446323CF3640002CC0AD /* SecondViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DFFA85A23DF7E790015C614 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		9DFFA85B23DF7E790015C614 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		AC17445C23CF3640002CC0AD /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC17445F23CF3640002CC0AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC17446123CF3640002CC0AD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				AC17446823CF3641002CC0AD /* Assets.xcassets */,
 				AC17446A23CF3641002CC0AD /* LaunchScreen.storyboard */,
 				AC17446D23CF3641002CC0AD /* Info.plist */,
+				9DFFA85A23DF7E790015C614 /* NewsTableViewCell.swift */,
+				9DFFA85B23DF7E790015C614 /* NewsTableViewCell.xib */,
 			);
 			path = Social;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				AC17446C23CF3641002CC0AD /* LaunchScreen.storyboard in Resources */,
 				AC17446923CF3641002CC0AD /* Assets.xcassets in Resources */,
+				9DFFA85D23DF7E790015C614 /* NewsTableViewCell.xib in Resources */,
 				AC17446723CF3640002CC0AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				AC17446423CF3640002CC0AD /* SecondViewController.swift in Sources */,
 				AC17446023CF3640002CC0AD /* AppDelegate.swift in Sources */,
+				9DFFA85C23DF7E790015C614 /* NewsTableViewCell.swift in Sources */,
 				AC17446223CF3640002CC0AD /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,15 +295,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZL6KN3J9AY;
 				INFOPLIST_FILE = Social/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Willian.Candido.Social;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williancsilva.Social;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,15 +313,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZL6KN3J9AY;
 				INFOPLIST_FILE = Social/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Willian.Candido.Social;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williancsilva.Social;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
