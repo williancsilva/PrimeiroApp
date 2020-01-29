@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9DFFA85C23DF7E790015C614 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFA85A23DF7E790015C614 /* NewsTableViewCell.swift */; };
 		9DFFA85D23DF7E790015C614 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DFFA85B23DF7E790015C614 /* NewsTableViewCell.xib */; };
+		9DFFA86923E1A5C70015C614 /* BFWControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFFA86523E0C61B0015C614 /* BFWControls.framework */; };
+		9DFFA86A23E1A5C70015C614 /* BFWControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFFA86523E0C61B0015C614 /* BFWControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC17446023CF3640002CC0AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17445F23CF3640002CC0AD /* AppDelegate.swift */; };
 		AC17446223CF3640002CC0AD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17446123CF3640002CC0AD /* FirstViewController.swift */; };
 		AC17446423CF3640002CC0AD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17446323CF3640002CC0AD /* SecondViewController.swift */; };
@@ -17,9 +19,41 @@
 		AC17446C23CF3641002CC0AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17446A23CF3641002CC0AD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9DFFA86423E0C61B0015C614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DFFA85F23E0C61B0015C614 /* BFWControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E28BA9111E963F7800D5DE3D;
+			remoteInfo = BFWControls;
+		};
+		9DFFA86623E0C61B0015C614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DFFA85F23E0C61B0015C614 /* BFWControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E28BA9BA1E964BED00D5DE3D;
+			remoteInfo = "BFWControls Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DFFA86B23E1A5C70015C614 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9DFFA86A23E1A5C70015C614 /* BFWControls.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9DFFA85A23DF7E790015C614 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		9DFFA85B23DF7E790015C614 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		9DFFA85F23E0C61B0015C614 /* BFWControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BFWControls.xcodeproj; path = BFWControls/BFWControls.xcodeproj; sourceTree = "<group>"; };
 		AC17445C23CF3640002CC0AD /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC17445F23CF3640002CC0AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC17446123CF3640002CC0AD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +69,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFFA86923E1A5C70015C614 /* BFWControls.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DFFA85E23E0C3D50015C614 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				9DFFA85F23E0C61B0015C614 /* BFWControls.xcodeproj */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		9DFFA86023E0C61B0015C614 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DFFA86523E0C61B0015C614 /* BFWControls.framework */,
+				9DFFA86723E0C61B0015C614 /* BFWControls Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DFFA86823E1A5C70015C614 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC17445323CF3640002CC0AD = {
 			isa = PBXGroup;
 			children = (
 				AC17445E23CF3640002CC0AD /* Social */,
+				9DFFA85E23E0C3D50015C614 /* Submodules */,
 				AC17445D23CF3640002CC0AD /* Products */,
+				9DFFA86823E1A5C70015C614 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +144,7 @@
 				AC17445823CF3640002CC0AD /* Sources */,
 				AC17445923CF3640002CC0AD /* Frameworks */,
 				AC17445A23CF3640002CC0AD /* Resources */,
+				9DFFA86B23E1A5C70015C614 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,12 +181,35 @@
 			mainGroup = AC17445323CF3640002CC0AD;
 			productRefGroup = AC17445D23CF3640002CC0AD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9DFFA86023E0C61B0015C614 /* Products */;
+					ProjectRef = 9DFFA85F23E0C61B0015C614 /* BFWControls.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AC17445B23CF3640002CC0AD /* Social */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9DFFA86523E0C61B0015C614 /* BFWControls.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BFWControls.framework;
+			remoteRef = 9DFFA86423E0C61B0015C614 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9DFFA86723E0C61B0015C614 /* BFWControls Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "BFWControls Demo.app";
+			remoteRef = 9DFFA86623E0C61B0015C614 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AC17445A23CF3640002CC0AD /* Resources */ = {
